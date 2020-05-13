@@ -1,4 +1,4 @@
-package de.spraener.pdoc.driver.openpdf;
+package de.spreaner.pdoc.driver.openpdf;
 
 import com.lowagie.text.Font;
 import com.lowagie.text.FontFactory;

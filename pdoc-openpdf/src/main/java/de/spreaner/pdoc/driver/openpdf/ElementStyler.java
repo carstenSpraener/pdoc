@@ -1,4 +1,4 @@
-package de.spraener.pdoc.driver.openpdf;
+package de.spreaner.pdoc.driver.openpdf;
 
 import com.lowagie.text.Element;
 import de.spraener.pdoc.style.PDocStyle;
