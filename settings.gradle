@@ -1,1 +1,3 @@
-rootProject.name = 'pdoc';
+include ':pdoc-core'
+include ':pdoc-openpdf'
+include ':pdoc-html'
