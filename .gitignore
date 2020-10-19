@@ -6,6 +6,7 @@ gradle-app.setting
 gradle
 gradlew*
 out
+pdoc-kos
 
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar
@@ -15,3 +16,5 @@ out
 
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
+.idea/**
+**/build

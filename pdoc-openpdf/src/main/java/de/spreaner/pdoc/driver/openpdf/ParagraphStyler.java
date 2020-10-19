@@ -13,7 +13,6 @@ public class ParagraphStyler implements ElementStyler {
         return instance;
     }
 
-    @Override
     public ElementStyler applyTo(PDocStyle style, Element pdfElement) {
         Paragraph p = (Paragraph)pdfElement;
         Float margin[] = style.getMargin();

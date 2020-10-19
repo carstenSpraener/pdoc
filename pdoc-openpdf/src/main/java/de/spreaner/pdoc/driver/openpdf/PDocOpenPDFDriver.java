@@ -3,6 +3,7 @@ package de.spreaner.pdoc.driver.openpdf;
 import com.lowagie.text.*;
 import com.lowagie.text.pdf.PdfWriter;
 import de.spraener.pdoc.*;
+import de.spraener.pdoc.context.PDocFilePrintContext;
 import de.spraener.pdoc.driver.PDocDriver;
 
 import java.io.OutputStream;
@@ -25,7 +26,16 @@ public class PDocOpenPDFDriver implements PDocDriver {
         }
     }
 
-    public boolean provides( String type ) {
+    @Override
+    public PDocPrintContext createPrintContext(OutputStream outputStream) {
+        try {
+            return new PDocFilePrintContext(outputStream);
+        } catch( Exception e ) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public boolean provides(String type ) {
         return type.startsWith("PDF");
     }
 

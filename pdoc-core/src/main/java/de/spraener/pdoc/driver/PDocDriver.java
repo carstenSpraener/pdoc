@@ -3,12 +3,15 @@ package de.spraener.pdoc.driver;
 import de.spraener.pdoc.PDoc;
 import de.spraener.pdoc.PDocPrintContext;
 
+import java.io.OutputStream;
 import java.util.List;
 import java.util.ServiceLoader;
 
 public interface PDocDriver {
 
     PDocDriver renderDocument(PDoc doc, PDocPrintContext context);
+
+    PDocPrintContext createPrintContext(OutputStream outputStream);
 
     /**
      * Does the driver provides the required format? Format could be any String
