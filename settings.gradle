@@ -1,4 +1,8 @@
-include ':pdoc-core'
-include ':pdoc-openpdf'
-include ':pdoc-html'
-include ':pdoc-kos'
+include 'pdoc-core'
+include 'pdoc-openpdf'
+include 'pdoc-html'
+dependencyResolutionManagement {
+    repositories{
+        mavenCentral()
+    }
+}

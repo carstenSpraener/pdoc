@@ -2,7 +2,7 @@ import de.spraener.pdoc.PDoc;
 import de.spraener.pdoc.PDocDemoDocument;
 import de.spraener.pdoc.PDocPrintContext;
 import de.spraener.pdoc.driver.PDocDriver;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.io.FileOutputStream;
 import java.io.OutputStream;

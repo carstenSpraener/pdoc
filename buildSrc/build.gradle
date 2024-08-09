@@ -1,0 +1,14 @@
+project.ext.group = 'de.spraener.pdoc'
+project.ext.version = '24.1.0'
+
+java.sourceCompatibility = JavaVersion.VERSION_11
+java.targetCompatibility = JavaVersion.VERSION_11
+
+subprojects {
+    dependencies {
+        testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.9.3'
+    }
+    test {
+        useJUnitPlatform()
+    }
+}

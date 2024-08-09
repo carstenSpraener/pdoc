@@ -46,6 +46,11 @@ public class PDocDemoDocument {
             });
 
         });
+        doc.paragraph("p1", p -> {
+            p.style("bold: true");
+            p.text("This is bold text");
+        });
+
         return doc;
     }
 }

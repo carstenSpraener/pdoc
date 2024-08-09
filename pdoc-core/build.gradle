@@ -1,15 +1,3 @@
 plugins {
-    id 'java-library'
-}
-
-repositories {
-    jcenter()
-}
-
-group='de.spraener.pdoc'
-version='0.0.1-SNAPSHOT';
-
-dependencies {
-
-    testImplementation 'junit:junit:4.12'
+    id('java')
 }

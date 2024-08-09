@@ -1,16 +1,11 @@
 plugins {
-    id 'java-library'
+    id('java')
 }
-
-repositories {
-    jcenter()
-}
-
-group='de.spraener.pdoc'
-version='0.0.1-SNAPSHOT';
-
 dependencies {
     implementation project(':pdoc-core')
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.9.3'
+}
 
-    testImplementation 'junit:junit:4.12'
+test {
+    useJUnitPlatform()
 }

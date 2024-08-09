@@ -18,7 +18,7 @@ public class HtmlElementStyler {
         }
         StringBuilder styleStmt = new StringBuilder();
         if( Boolean.TRUE.equals(style.isFontBold()) ) {
-            styleStmt.append("font-style: bold;");
+            styleStmt.append("font-weight: bold;");
         }
         if( Boolean.TRUE.equals(style.isUnderlined()) ) {
             htmlElement.setAttribute("underline", "true");
